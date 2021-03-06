@@ -1,0 +1,42 @@
+{
+  "BH1110AM":{
+    "make": "VW",
+    "model": "Golf",
+    "fuelconsumption": 5,
+    "registrationplate": "BH1110AM",
+    "hourrate": 3,
+    "dayrate": 24,
+    "weekrate": 120,
+    "status": "avaiable"
+  },
+  "BH0032AK":{
+    "make": "Volvo",
+    "model": "S60",
+    "fuelconsumption": 6,
+    "registrationplate": "BH0032AK",
+    "hourrate": 3,
+    "dayrate": 30,
+    "weekrate": 150,
+    "status": "avaiable"
+  },
+  "BH2532AK":{
+    "make": "Volvo",
+    "model": "S40",
+    "fuelconsumption": 12,
+    "registrationplate": "BH2532AK",
+    "hourrate": 2,
+    "dayrate": 25,
+    "weekrate": 100,
+    "status": "avaiable"
+  },
+   "BH8763AK":{
+    "make": "Opel",
+    "model": "Astra",
+    "fuelconsumption": 5,
+    "registrationplate": "BH8763AK",
+    "hourrate": 3,
+    "dayrate": 30,
+    "weekrate": 140,
+     "status": "avaiable"
+  }
+}
