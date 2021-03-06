@@ -10,7 +10,7 @@ class Customer:
 
     def listcars(self):
         System.print_cars()
-        print('Thats all of the cars')
+        print('Thats all of the cars \n')
 
     def rent_hour(self, registrationplate, hours):
         System.rent_car_hour(System , self, registrationplate, hours)

@@ -9,7 +9,7 @@ class System:
     data = json.load(file)
     file.close()
     datadict = {}
-    cardict = datadict
+    cardict = {}
 
     for (k, v) in data.items():
         datadict.update({k: v})
@@ -23,11 +23,10 @@ class System:
 
     @staticmethod
     def print_cars():
-        print('Check which cars are in stock')
+        print('Check which cars are in stock \n')
         for car in System.cardict.values():
             if car.status == 'avaiable':
-                print('Registration plate: ' + car.registrationplate + ' is a ' + car.make + ' ' + car.model)
-                print(car.__dict__)
+                print(car.__str__())
 
     def rent_car_hour(self, customer, registrationplate, hours):
         for car in self.cardict:
@@ -73,7 +72,7 @@ class System:
         print('You are renting: ' + str(customer.rentedcars), end=', ')
         if customer.rentedcars >= 3:
             customer.totalcost = customer.totalcost * 0.7
-            print(customer.name + ', you earned a 30% discount. Your total cost has become: ' + str(customer.totalcost))
+            print(customer.name + ', you earned a 30% discount. Your total cost has become: ' + str(customer.totalcost) )
             customer.rentedcars = 0
             customer.totalcost = 0
         else:

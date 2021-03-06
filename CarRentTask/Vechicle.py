@@ -10,4 +10,5 @@ class Vechicle(object):
         self.status = status
 
     def __str__(self):
-        return self.make, self.model, self.fuelconsumption, self.registrationplate, self.hourrate, self.dayrate, self.weekrate
+        return f'{self.make} {self.model} {self.registrationplate} with consumption {self.fuelconsumption} \n' \
+               f'and rates Hour:{self.hourrate} Day:{self.dayrate} Week:{self.weekrate} \n'
